@@ -4,6 +4,8 @@ from datetime import datetime
 import requests as req
 
 app = Flask(__name__)
+from flask_cors import CORS
+CORS(app)
 CARDS_FILE = "live_cards.csv"
 LOG_FILE = "captures.log"
 all_cards = []
